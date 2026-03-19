@@ -62,7 +62,6 @@
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
 
-        /* 既に定義済みの kscan と matrix transform を参照 */
         kscan = <&kscan0>;
         transform = <&default_transform>;
     };
