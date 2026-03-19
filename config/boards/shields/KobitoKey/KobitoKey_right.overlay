@@ -3,7 +3,7 @@
 #include <input/processors.dtsi>
 
 /* 列オフセット */
-&default_transform { col-offset = <5>; };
+&default_transform { col-offset = <6>; };
 
 &pinctrl {
     spi0_default_r: spi0_default_r { group1 {
