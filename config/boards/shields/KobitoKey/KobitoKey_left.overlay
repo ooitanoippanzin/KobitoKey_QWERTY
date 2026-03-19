@@ -2,7 +2,6 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include <input/processors/sensor_rotation.dtsi>
-#include <physical_layouts.dtsi>
 
 &xiao_serial { status = "disabled"; };
 
