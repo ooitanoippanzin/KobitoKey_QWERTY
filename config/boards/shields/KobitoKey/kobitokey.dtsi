@@ -6,13 +6,11 @@
 #include <physical_layouts.dtsi>
 
 / {
-    /* 行列スキャン：rowは左右共通、colは左右で分ける */
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
 
-        /* Dピンは &xiao_d <番号> で指定（XIAOフォーマット） */
         row-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, /* 例: D0 */
                     <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, /* 例: D1 */
                     <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, /* 例: D2 */
@@ -26,7 +24,6 @@
                     <&gpio0 16 GPIO_ACTIVE_HIGH> ;
     };
 
-    /* 左右合体で 4行×10列（左0..4, 右5..9） */
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         rows = <5>;
@@ -39,7 +36,6 @@
         >;
     };
 
-    /* 右側トラックボールを split 入力として扱う（ID=0） */
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
@@ -50,7 +46,6 @@
         };
     };
 
-    /* リスナー（中央で有効化。周辺から来た入力もここで処理） */
     tb_left_listener: tb_left_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
@@ -66,17 +61,6 @@
 
 
 / {
-    /* ★ 単体の物理レイアウト定義（Studio不要の最小形） */
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-
-        /* 既に定義済みの kscan と matrix transform を参照 */
-        kscan = <&kscan0>;
-        transform = <&default_transform>;
-    };
-
-    /* ★ デフォルトで使うレイアウトを chosen で指す */
     chosen {
         zmk,physical-layout = &physical_layout0;
     };
