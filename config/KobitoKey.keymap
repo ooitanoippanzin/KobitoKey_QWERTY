@@ -5,6 +5,20 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <behaviors/rgbled_widget.dtsi>
 
+&tb_right_split {
+    gesture_4 {
+        layers = <4>;
+        bindings =
+            <&kp LG(RIGHT_ARROW)>,
+            <&kp LG(LEFT_ARROW)>,
+            <&kp LG(UP_ARROW)>,
+            <&kp LG(DOWN_ARROW)>;
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -68,6 +82,16 @@
 
         layer3 {
             label = "MOUSE";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans          &trans                    &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans                    &trans          &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer4 {
+            label = "GESTURE_4";
             bindings = <
 &trans  &trans  &trans  &trans  &trans          &trans                    &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
