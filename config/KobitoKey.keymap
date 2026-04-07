@@ -7,7 +7,9 @@
 #include <mouse-gesture.dtsi>
 
 / {
-    &zip_mouse_gesture {
+    mouse_gesture: mouse_gesture {
+        compatible = "zmk,input-processor-mouse-gesture";
+
         stroke-size = <120>;
         idle-timeout-ms = <200>;
         enable-eager-mode;
