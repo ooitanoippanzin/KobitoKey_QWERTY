@@ -52,7 +52,6 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&tb_right_split>;
-        
     };
 };
 
