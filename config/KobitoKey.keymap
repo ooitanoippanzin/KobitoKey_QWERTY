@@ -9,6 +9,7 @@
 / {
     mouse_gesture: mouse_gesture {
         compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
 
         stroke-size = <120>;
         idle-timeout-ms = <200>;
