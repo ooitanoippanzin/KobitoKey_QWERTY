@@ -63,6 +63,12 @@
     // };
 };
 
+&tb_right_listener {
+    input-processors =
+        <&zip_mouse_gesture>;
+    };
+};
+
 / {
     combos {
         compatible = "zmk,combos";
