@@ -6,33 +6,6 @@
 #include <behaviors/rgbled_widget.dtsi>
 #include <mouse-gesture.dtsi>
 
-&zip_mouse_gesture {
-    stroke-size = <120>;
-    idle-timeout-ms = <200>;
-    enable-eager-mode;
-
-    gesture_left {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(LEFT)>;
-    };
-
-    gesture_right {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(RIGHT)>;
-    };
-
-    gesture_up {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LG(UP)>;
-    };
-
-    gesture_down {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(DOWN)>;
-    };
-};
-
-
 / {
     &zip_mouse_gesture {
         stroke-size = <120>;
