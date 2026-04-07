@@ -32,6 +32,10 @@ manifest:
     - name: zmk-rgbled-widget  # <-- led
       remote: caksoylar
       revision: v0.3-branch
-      
+
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
+  
   self:
     path: config
