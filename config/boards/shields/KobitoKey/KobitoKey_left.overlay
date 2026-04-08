@@ -64,8 +64,8 @@
 };
 
 &zip_mouse_gesture {
-    stroke-size = <300>; // Optional (default: 200)
-    enable-eager-mode; // Optional, but recommended
+    stroke-size = <300>;
+    enable-eager-mode;
 
     history_back {
         pattern = <GESTURE_RIGHT>;
