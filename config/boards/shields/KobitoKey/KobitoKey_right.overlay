@@ -45,6 +45,5 @@
     device = <&tb_right>;
 
     input-processors = 
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&mouse_gesture>;
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
 };
