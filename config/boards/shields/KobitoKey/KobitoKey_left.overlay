@@ -78,12 +78,12 @@
     };
 
     close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        pattern = <GESTURE_DOWN>, <GESTURE_RIGHT>;
         bindings = <&kp LC(W)>;
     };
 
     new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        pattern = <GESTURE_DOWN>, <GESTURE_LEFT>;
         bindings = <&kp LC(T)>;
     };
 };
