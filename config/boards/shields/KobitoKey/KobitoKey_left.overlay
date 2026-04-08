@@ -63,31 +63,6 @@
     };
 };
 
-&zip_mouse_gesture {
-    stroke-size = <300>;
-    enable-eager-mode;
-
-    history_back {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LA(LEFT)>;
-    };
-
-    history_forward {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LA(RIGHT)>;
-    };
-
-    close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp LC(W)>;
-    };
-
-    new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp LC(T)>;
-    };
-};
-
 &tb_left_listener {
     status = "okay";
     device = <&tb_left>;
