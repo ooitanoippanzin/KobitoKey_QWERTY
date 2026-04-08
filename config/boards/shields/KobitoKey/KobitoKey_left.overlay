@@ -114,6 +114,7 @@
 
     input-processors =
         <&sensor_rotation_right>,
+        <&zip_mouse_gesture>,
         <&zip_temp_layer 3 5000>;
 };
 
