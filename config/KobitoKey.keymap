@@ -35,22 +35,22 @@
     stroke-size = <300>;
     enable-eager-mode;
 
-    history_back {
+    history_back_second {
         pattern = <GESTURE_RIGHT>;
         bindings = <&kp LA(LEFT)>;
     };
 
-    history_forward {
+    history_forward_second {
         pattern = <GESTURE_LEFT>;
         bindings = <&kp LA(RIGHT)>;
     };
 
-    close_tab {
+    close_tab_second {
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LC(W)>;
     };
 
-    new_tab {
+    new_tab_second {
         pattern = <GESTURE_UP>;
         bindings = <&kp LC(T)>;
     };
