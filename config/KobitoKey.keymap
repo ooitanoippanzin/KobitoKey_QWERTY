@@ -6,7 +6,7 @@
 #include <behaviors/rgbled_widget.dtsi>
 #include <mouse-gesture.dtsi>
 
-&zip_mouse_gesture {
+&zip_mouse_gesture_R {
     stroke-size = <300>;
     enable-eager-mode;
 
@@ -21,12 +21,37 @@
     };
 
     close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        pattern = <GESTURE_DOWN>;
         bindings = <&kp LC(W)>;
     };
 
     new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LC(T)>;
+    };
+};
+
+&zip_mouse_gesture_L {
+    stroke-size = <300>;
+    enable-eager-mode;
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_UP>;
         bindings = <&kp LC(T)>;
     };
 };
