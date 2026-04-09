@@ -6,7 +6,7 @@
 #include <behaviors/rgbled_widget.dtsi>
 #include <mouse-gesture.dtsi>
 
-&zip_mouse_gesture_R {
+&zip_mouse_gesture {
     stroke-size = <300>;
     enable-eager-mode;
 
@@ -26,31 +26,6 @@
     };
 
     new_tab {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LC(T)>;
-    };
-};
-
-&zip_mouse_gesture_L {
-    stroke-size = <300>;
-    enable-eager-mode;
-
-    history_back_second {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LA(LEFT)>;
-    };
-
-    history_forward_second {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LA(RIGHT)>;
-    };
-
-    close_tab_second {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LC(W)>;
-    };
-
-    new_tab_second {
         pattern = <GESTURE_UP>;
         bindings = <&kp LC(T)>;
     };
@@ -90,10 +65,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E              &kp R            &kp T                      &kp LG(UP)                               &kp UP                  &kp Y        &kp U       &kp I          &kp O    &kp P
-&kp A  &kp S  &kp D              &kp F            &kp G        &kp LG(LEFT)  &kp LA(F4)    &kp LG(RIGHT)    &kp LEFT  &kp RG(TAB)  &kp RIGHT  &kp H        &kp J       &kp K          &kp L    &kp SQT
-&kp Z  &kp X  &kp C              &kp V            &kp B                      &kp LG(DOWN)                             &kp DOWN                &kp N        &kp M       &kp COMMA      &kp DOT  &kp SLASH
-              &mt LSHIFT ESCAPE  &lt 2 LA(GRAVE)  &lt 1 SPACE                                                                                 &lt 3 ENTER  &kp DELETE  &kp BACKSPACE
+&kp Q  &kp W  &kp E              &kp R            &kp T                      &kp LG(UP)                               &kp UP                  &kp Y        &kp U          &kp I          &kp O    &kp P
+&kp A  &kp S  &kp D              &kp F            &kp G        &kp LG(LEFT)  &kp LA(F4)    &kp LG(RIGHT)    &kp LEFT  &kp RG(TAB)  &kp RIGHT  &kp H        &kp J          &kp K          &kp L    &kp SQT
+&kp Z  &kp X  &kp C              &kp V            &kp B                      &kp LG(DOWN)                             &kp DOWN                &kp N        &kp M          &kp COMMA      &kp DOT  &kp SLASH
+              &mt LSHIFT ESCAPE  &lt 2 LA(GRAVE)  &lt 1 SPACE                                                                                 &lt 3 ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
 
