@@ -91,11 +91,3 @@
         <&zip_mouse_gesture>,
         <&zip_temp_layer 3 5000>;
 };
-
-&zip_temp_layer {
-    excluded-positions = <
-        6
-        7
-        8
-    >;
-};
