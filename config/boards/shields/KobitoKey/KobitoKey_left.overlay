@@ -74,7 +74,7 @@
             <&zip_x_scaler 1 15>,
             <&zip_y_scaler 1 15>,
             <&zip_xy_to_scroll_mapper>,
-            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+            <&zip_xy_swap_mapper>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
     };
 
@@ -91,7 +91,7 @@
 
     input-processors =
         <&sensor_rotation_right>,
-        <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+        <&zip_xy_swap_mapper>,
         <&zip_mouse_gesture>,
         <&zip_temp_layer 3 5000>;
 };
