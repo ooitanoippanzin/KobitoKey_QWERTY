@@ -7,7 +7,7 @@
 #include <mouse-gesture.dtsi>
 
 &zip_mouse_gesture {
-    stroke-size = <300>;
+    stroke-size = <100>;
     enable-eager-mode;
 
     history_back {
