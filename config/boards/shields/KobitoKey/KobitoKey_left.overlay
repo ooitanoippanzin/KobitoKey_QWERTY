@@ -98,9 +98,9 @@
 
 &zip_temp_layer {
     excluded-positions = <
-        1
-        8
-        9
-        17
+        0
+        10
+        11
+        25
     >;
 };
