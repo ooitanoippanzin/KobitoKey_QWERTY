@@ -47,10 +47,10 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&mt EQUAL MINUS  &mt LS(N7) N7  &mt LS(N8) N8  &mt LS(N9) N9  &kp PLUS                    &kp LC(T)                           &kp C_VOL_UP               &kp LPAR           &kp RPAR           &kp TILDE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH        &mt LS(N4) N4  &mt LS(N5) N5  &mt LS(N6) N6  &kp ASTERISK  &kp LA(LEFT)  &kp LC(N)  &kp LA(RIGHT)    &trans  &kp C_MUTE         &trans  &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &kp AT_SIGN  &kp HASH              &kp DOLLAR            
-&mt LS(N0) N0    &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &kp PERIOD                  &kp LC(W)                           &kp C_VOLUME_DOWN          &kp LT             &kp GT             &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE       
-                                &trans         &trans         &trans                                                                                     &kp RSHIFT         &kp TAB            &kp CLCK
+&mt EQUAL MINUS      &mt LS(N7) N7  &mt LS(N8) N8  &mt LS(N9) N9  &kp PLUS                    &kp LC(T)                           &kp C_VOL_UP               &kp LPAR           &kp RPAR           &kp TILDE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&mt LS(SLASH) SLASH  &mt LS(N4) N4  &mt LS(N5) N5  &mt LS(N6) N6  &kp ASTERISK  &kp LA(LEFT)  &kp LC(N)  &kp LA(RIGHT)    &trans  &kp C_MUTE         &trans  &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &kp AT_SIGN  &kp HASH              &kp DOLLAR            
+&mt LS(N0) N0        &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &kp PERIOD                  &kp LC(W)                           &kp C_VOLUME_DOWN          &kp LT             &kp GT             &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE       
+                                    &trans         &trans         &trans                                                                                     &kp RSHIFT         &kp TAB            &kp CLCK
             >;
         };
 
