@@ -3,7 +3,6 @@
 #include <input/processors.dtsi>
 #include <input/processors/sensor_rotation.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <mouse-gesture.dtsi>
 
 &xiao_serial { status = "disabled"; };
 
@@ -92,13 +91,11 @@
         <&sensor_rotation_right>,
         <&zip_xy_swap_mapper>,
         <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-        <&zip_mouse_gesture>,
         <&zip_temp_layer 3 5000>;
 };
 
 &zip_temp_layer {
     excluded-positions = <
-        0
         10
         11
         25
