@@ -11,10 +11,10 @@
 
         default_layer {
             bindings = <
-&mt LCTRL Q  &kp W  &kp E             &kp R      &kp T                      &kp LG(UP)                               &kp UP                  &kp Y        &kp U          &kp I       &kp O    &kp P
-&kp A        &kp S  &kp D             &kp F      &kp G        &kp LG(LEFT)  &kp LA(F4)    &kp LG(RIGHT)    &kp LEFT  &kp RG(TAB)  &kp RIGHT  &kp H        &kp J          &kp K       &kp L    &kp SQT
-&kp Z        &kp X  &kp C             &kp V      &kp B                      &kp LG(DOWN)                             &kp DOWN                &kp N        &kp M          &kp COMMA   &kp DOT  &mt LANG2 LANG1
-                    &mt LSIFT ESCAPE  &lt 2 TAB  &lt 1 SPACE                                                                                 &lt 4 ENTER  &kp BACKSPACE  &kp DELETE
+&mt LANG2 Q  &kp W  &kp E             &kp R      &kp T                      &kp LG(UP)                               &kp UP                  &kp Y        &kp U          &kp I              &kp O    &mt LANG1 P
+&kp A        &kp S  &kp D             &kp F      &kp G        &kp LG(LEFT)  &kp LA(F4)    &kp LG(RIGHT)    &kp LEFT  &kp RG(TAB)  &kp RIGHT  &kp H        &kp J          &kp K              &kp L    &kp SQT
+&kp Z        &kp X  &kp C             &kp V      &kp B                      &kp LG(DOWN)                             &kp DOWN                &kp N        &kp M          &kp COMMA          &kp DOT  &kp SLASH
+                    &mt LCTRL ESCAPE  &lt 2 TAB  &lt 1 SPACE                                                                                 &lt 4 ENTER  &kp BACKSPACE  &mt RSHIFT DELETE
             >;
         };
 
@@ -23,7 +23,7 @@
             bindings = <
 &mt EQUAL MINUS      &mt LS(N7) N7  &mt LS(N8) N8  &mt LS(N9) N9  &kp PLUS                    &kp LC(T)                           &kp C_VOL_UP               &kp LPAR           &kp RPAR           &kp TILDE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &mt LS(SLASH) SLASH  &mt LS(N4) N4  &mt LS(N5) N5  &mt LS(N6) N6  &kp ASTERISK  &kp LA(LEFT)  &kp LC(N)  &kp LA(RIGHT)    &trans  &kp C_MUTE         &trans  &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &kp AT_SIGN  &kp HASH              &kp DOLLAR            
-&mt LS(N0) N0        &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &kp PERIOD                  &kp LC(W)                           &kp C_VOLUME_DOWN          &kp LT             &kp GT             &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        
+&mt LS(N0) N0        &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &kp PERIOD                  &kp LC(W)                           &kp C_VOLUME_DOWN          &kp LT             &kp GT             &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE       
                                     &trans         &trans         &trans                                                                                     &kp RSHIFT         &kp TAB            &kp CLCK
             >;
         };
